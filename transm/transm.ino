@@ -14,9 +14,9 @@ int VccPin=A1; //Set Analog pin 5 as VCC
 int xPin=A2; //X axis input
 int yPin=A3; //Y axis input
 int zPin=A4; //Z axis input(not used)
-long x; //Variabe for storing X coordinates
-long y; //Variabe for storing Y coordinates
-long z; //Variabe for storing Z coordinates
+long x; //Variable for storing X coordinates
+long y; //Variable for storing Y coordinates
+long z; //Variable for storing Z coordinates
 void setup()
 {
   Serial.begin(9600);
@@ -36,28 +36,28 @@ void loop()
   y = analogRead(yPin); //Reads Y coordinates
   z = analogRead(zPin); //Reads Z coordinates
 
-    if(x<280)      // Change the value for adjusting sensitivity 
+    if(x<280)       
     {
     Serial.print("f"); 
     forward();
     }
-    else if(x>350) // Change the value for adjusting sensitivity
+    else if(x>350) 
     {
       Serial.print("b"); 
       backward();
      }
-     if(y>350) // Change the value for adjusting sensitivity
+     if(y>350) 
     {
       Serial.print("r"); 
       right();
      }
-    else if(y<290) // Change the value for adjusting sensitivity
+    else if(y<290) 
     {
       Serial.print("l"); 
       left();
      }
-   // else
-     // stop_();
+    else
+      stop_();
 }
 void stop_()
 {
