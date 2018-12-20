@@ -54,35 +54,35 @@ void forward()
 {
   Serial.println("");
   Serial.println("Forward");
-//  digitalWrite(Q1,HIGH);
-//  digitalWrite(Q2,LOW);
-//  digitalWrite(Q3,HIGH);
-//  digitalWrite(Q4,LOW);
+  digitalWrite(Q1,HIGH);
+  digitalWrite(Q2,LOW);
+  digitalWrite(Q3,HIGH);
+  digitalWrite(Q4,LOW);
 }
 void backward()
 {
   Serial.println("");
   Serial.println("Backward");
-//  digitalWrite(Q1,LOW);
-//  digitalWrite(Q2,HIGH);
-//  digitalWrite(Q3,LOW);
-//  digitalWrite(Q4,HIGH);
+  digitalWrite(Q1,LOW);
+  digitalWrite(Q2,HIGH);
+  digitalWrite(Q3,LOW);
+  digitalWrite(Q4,HIGH);
 }
 void left()
 {
   Serial.println("");
   Serial.println("Left");
-//  digitalWrite(Q1,HIGH);
-//  digitalWrite(Q2,LOW);
-//  digitalWrite(Q3,LOW);
-//  digitalWrite(Q4,LOW);
+  digitalWrite(Q1,HIGH);
+  digitalWrite(Q2,LOW);
+  digitalWrite(Q3,LOW);
+  digitalWrite(Q4,LOW);
 }
 void right()
 {
   Serial.println("");
   Serial.println("Right");
-//  digitalWrite(Q1,LOW);
-//  digitalWrite(Q2,LOW);
-//  digitalWrite(Q3,HIGH);
-//  digitalWrite(Q4,HIGH);
+  digitalWrite(Q1,LOW);
+  digitalWrite(Q2,LOW);
+  digitalWrite(Q3,HIGH);
+  digitalWrite(Q4,HIGH);
 }
